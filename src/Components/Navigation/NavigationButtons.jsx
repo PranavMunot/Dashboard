@@ -1,11 +1,12 @@
-import { Avatar, Box, Button, Typography } from '@mui/material'
+import { Avatar, Box, Button, IconButton, Typography } from '@mui/material'
 import { poppinsFont } from '../../utils/Theme'
+import { WorldIcon, MoonIcon } from '../../Assets/SVGIcons'
 
 
 function NavigationButtons() {
     return (
         <Box>
-            <Box>
+            <Box sx={{ pb: 2 }}>
                 <Button variant='contained' sx={{
                     backgroundColor: 'secondary.light',
                     mr: 1,
@@ -43,7 +44,16 @@ function NavigationButtons() {
 
                 </Button>
             </Box>
-            <Box>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <IconButton>
+                    <WorldIcon />
+                </IconButton>
+
+                <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '3.7rem', backgroundColor: 'secondary.light', p: 0.8, borderRadius: '50px' }}>
+                    <MoonIcon />
+                    <Box sx={{ borderRadius: '50%', width: '1.1rem', height: '1.1rem', backgroundColor: 'primary.main' }}></Box>
+                </Box>
+
 
             </Box>
         </Box>

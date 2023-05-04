@@ -70,7 +70,7 @@ function NavigationElements() {
         <>
             <Box>
                 {elementsData.map((element) => (
-                    <Box sx={{
+                    <Box key={element.key} sx={{
                         display: 'flex',
                         py: 1.2,
                         borderRadius: '10px',

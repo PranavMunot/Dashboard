@@ -6,17 +6,23 @@ import NavigationButtons from './NavigationButtons'
 const MUI_CSS_Handlers = {
     navigation: {
         height: '100%',
-        p: 3,
+        mx: 3,
+        py: 2,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between'
     },
 }
 
 function Navigation() {
     return (
         <Box sx={MUI_CSS_Handlers.navigation}>
-            {/* navigation headers */}
-            <NavigationHeading />
-            {/* navigation elements */}
-            <NavigationElements />
+            <Box>
+                {/* navigation headers */}
+                <NavigationHeading />
+                {/* navigation elements */}
+                <NavigationElements />
+            </Box>
             {/* navigation theming */}
             <NavigationButtons />
         </Box>
