@@ -10,13 +10,15 @@ function NavigationButtons() {
                 <Button variant='contained' sx={{
                     backgroundColor: 'secondary.light',
                     mr: 1,
+                    width: '95px',
+                    px: 1,
                     '&:hover': {
                         backgroundColor: 'secondary.main'
                     }
                 }}
                     startIcon={
                         <Avatar sx={{ backgroundColor: 'primary.main', width: '1rem', height: '1rem' }}>
-                            <Typography variant='h6' fontFamily={poppinsFont} sx={{ fontWeight: 600, fontSize: '10px', color: 'text.primary' }} >
+                            <Typography fontFamily={poppinsFont} sx={{ fontWeight: 600, fontSize: '10px', color: 'text.primary' }} >
                                 N
                             </Typography>
                         </Avatar>
@@ -32,6 +34,8 @@ function NavigationButtons() {
                 <Button variant='contained' sx={{
                     backgroundColor: 'primary.light',
                     color: 'primary.main',
+                    width: '95px',
+                    px: 1,
                     '&:hover': {
                         backgroundColor: 'primary.main',
                         color: 'primary.light'
@@ -45,7 +49,7 @@ function NavigationButtons() {
                 </Button>
             </Box>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                <IconButton>
+                <IconButton sx={{ mr: 1 }}>
                     <WorldIcon />
                 </IconButton>
 

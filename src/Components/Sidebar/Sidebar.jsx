@@ -6,14 +6,14 @@ import { poppinsFont } from '../../utils/Theme'
 function Sidebar() {
     return (
         <Box sx={{ m: 3 }}>
-            <Box>
-                <Button sx={{ backgroundColor: 'secondary.light', px: 1.5, mr: 2, '&:hover': { backgroundColor: 'secondary.light' } }} startIcon={<img src={logo} alt='i' />} endIcon={<DropDown />}>
+            <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                <Button fullWidth sx={{ backgroundColor: 'secondary.light', px: 1.5, mr: 2, '&:hover': { backgroundColor: 'secondary.light' } }} startIcon={<img src={logo} alt='i' />} endIcon={<DropDown />}>
                     <Typography sx={{ textTransform: 'none', color: 'text.primary', fontSize: '1rem', fontFamily: { poppinsFont } }}>
                         Avalanche
                     </Typography>
                 </Button>
 
-                <Button variant='outlined' sx={{ textTransform: 'none', }} startIcon={<WalletIcon />} endIcon={<DropDown />}>
+                <Button fullWidth variant='outlined' sx={{ textTransform: 'none', }} startIcon={<WalletIcon />} endIcon={<DropDown />}>
                     <Typography variant='caption' sx={{ fontWeight: 600, fontSize: '14px', color: 'text.primary' }} >
                         0xf6...1353
                     </Typography>
